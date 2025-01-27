@@ -1,0 +1,109 @@
+# 忽略具体配置文件（开发和本地环境）
+application-dev.yml
+application-local.yml
+bootstrap.yml
+
+# 忽略模块资源目录（但保留公共配置）
+#cart-service/src/main/resources/
+#hm-common/src/main/resources/
+#hm-gateway/src/main/resources/
+#hm-service/src/main/resources/
+#item-service/src/main/resources/
+#pay-service/src/main/resources/
+#trade-service/src/main/resources/
+#user-service/src/main/resources/
+
+resources/
+
+# Maven 构建目录
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+
+# IDE 相关文件
+.idea/
+*.iml
+.settings/
+.project
+
+# 日志文件
+logs/
+*.log
+
+# 本地配置文件
+.env
+
+# Node.js 相关
+node_modules/
+dist/
+build/
+
+# 添加到 .gitignore 文件
+#cart-service/src/main/resources/
+#hm-common/src/main/resources/
+#hm-gateway/src/main/resources/
+#hm-service/src/main/resources/
+#item-service/src/main/resources/
+#pay-service/src/main/resources/
+#trade-service/src/main/resources/
+#user-service/src/main/resources/
+
+# Maven 构建目录和文件
+#target/
+#!.mvn/wrapper/maven-wrapper.jar
+#*.jar
+#*.war
+#*.nar
+#*.ear
+#*.zip
+#*.tar.gz
+#*.rar
+#
+## IDE 相关文件（对于使用 IntelliJ IDEA 的项目）
+#.idea/
+#*.iws
+#*.iml
+#*.ipr
+#.settings/
+#.project
+#.classpath
+#
+## 日志文件
+#logs/
+#*.log
+#npm-debug.log*
+#yarn-debug.log*
+#yarn-error.log*
+#
+## 本地配置文件（包含敏感信息）
+#application-local.yml
+#application-dev.yml
+#*.local.yml
+#.env
+#
+## 操作系统生成的文件
+#.DS_Store
+#Thumbs.db
+#*.swp
+#*.swo
+#
+## 临时文件
+#*.tmp
+#*.bak
+#*.sw?
+#*~
+#
+## 测试生成的文件
+#**/test/resources/
+#surefire-reports/
+#
+## 前端构建文件（如果项目包含前端）
+#node_modules/
+#dist/
+#build/
+#
+## 配置文件通配
+#**/application-*.yml
+#!**/application.yml
+#!**/application-example.yml
